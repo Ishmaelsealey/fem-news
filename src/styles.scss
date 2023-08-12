@@ -23,17 +23,18 @@ header {
 	flex-direction: row;
 	flex-wrap: nowrap;
 	margin-bottom: 1em;
+	align-items: center;
 	.logo {
 		flex: 1;
 	}
-	nav > a {
+	nav a {
 		text-decoration: none;
 		color: $very-dark-blue;
 	}
 }
 
 .mobile-hero-image {
-	width: 340px;
+	width: 100%;
 }
 
 h1 {
@@ -102,5 +103,43 @@ p {
 	h3.number {
 		color: $greyish-blue;
 		font-size: 2em;
+	}
+}
+
+// Hamburger Menu
+
+.hamburger-menu {
+	background-color: $off-white;
+	border: none;
+	height: 2.5em;
+	z-index: 2;
+}
+.hamburger-menu:hover {
+	cursor: pointer;
+}
+
+.close {
+	display: none;
+}
+
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: none;
+	grid-template-columns: 30vw 70vw;
+	height: 100vh;
+	.overlay {
+		background-color: rgba($color: #000000, $alpha: 0.5);
+	}
+	.nav-items {
+		display: flex;
+		flex-direction: column;
+		padding: 6em 2em;
+		background-color: $off-white;
+		z-index: 1;
+		a {
+			margin: 1em 0;
+		}
 	}
 }
