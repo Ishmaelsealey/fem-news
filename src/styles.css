@@ -25,6 +25,11 @@ header .logo {
 header nav a {
   text-decoration: none;
   color: hsl(240deg, 100%, 5%);
+  transition: color 0.3s linear;
+}
+header nav a:hover {
+  cursor: pointer;
+  color: hsl(35deg, 77%, 62%);
 }
 
 .mobile-hero-image {
@@ -35,6 +40,7 @@ h1 {
   margin-top: 0.5em;
   font-weight: 800;
   font-size: 2.5em;
+  color: hsl(240deg, 100%, 5%);
 }
 
 p {
@@ -55,6 +61,11 @@ p {
   font-weight: 700;
   letter-spacing: 0.3em;
   color: hsl(36deg, 100%, 99%);
+  transition: background-color, 0.3s linear;
+}
+#hero-readmore button:hover {
+  cursor: pointer;
+  background-color: hsl(240deg, 100%, 5%);
 }
 
 #new-section {
@@ -69,8 +80,15 @@ p {
 }
 #new-section h3 {
   font-weight: 700;
-  color: hsl(36deg, 100%, 99%);
   margin-bottom: 1em;
+}
+#new-section h3 a {
+  transition: color, 0.3s linear;
+  color: hsl(36deg, 100%, 99%);
+  text-decoration: none;
+}
+#new-section h3:hover a {
+  color: hsl(35deg, 77%, 62%);
 }
 #new-section p {
   color: hsl(233deg, 8%, 79%);
@@ -95,6 +113,14 @@ p {
 }
 .article-link h3 {
   font-weight: 700;
+}
+.article-link h3.title a {
+  color: hsl(240deg, 100%, 5%);
+  text-decoration: none;
+  transition: color, 0.3s linear;
+}
+.article-link h3.title:hover a {
+  color: hsl(5deg, 85%, 63%);
 }
 .article-link h3.number {
   color: hsl(233deg, 8%, 79%);
