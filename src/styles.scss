@@ -11,6 +11,11 @@ $very-dark-blue: hsl(240, 100%, 5%);
 	box-sizing: border-box;
 }
 
+*:focus {
+	padding: 2px;
+	outline: 4px solid $primary-orange;
+}
+
 body {
 	font-family: Inter, sans-serif;
 	font-weight: 400;

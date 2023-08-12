@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  padding: 2px;
+  outline: 4px solid hsl(35deg, 77%, 62%);
+}
+
 body {
   font-family: Inter, sans-serif;
   font-weight: 400;
