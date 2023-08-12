@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <meta name="description" content="Frontendmentor News landing page challenge. Made by Ishmael Sealey using CSS GRID">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles.css">
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
@@ -27,12 +30,13 @@
 
   <main>
     <section>
-      <img src="./images/image-web-3-desktop.jpg" alt="decorative image">
+      <img class="mobile-hero-image" src="./images/image-web-3-mobile.jpg" alt="decorative image">
+      <!-- <img src="./images/image-web-3-desktop.jpg" alt="decorative image"> -->
     </section>
     <h1>
       The Bright Future of Web 3.0?
     </h1>
-    <section>
+    <section id="hero-readmore">
       <p>
         We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
         But is it really fulfilling its promise?
@@ -64,27 +68,33 @@
     </section>
     <section class="article-link">
       <img src="./images/image-retro-pcs.jpg" alt="retro pc image">
-      <h3>01</h3>
-      <h3>Reviving Retro PCs</h3>
-      <p>
-        What happens when old PCs are given modern upgrades?
-      </p>
+      <div class="info">
+        <h3 class="number">01</h3>
+        <h3>Reviving Retro PCs</h3>
+        <p>
+          What happens when old PCs are given modern upgrades?
+        </p>
+      </div>
     </section>
     <section class="article-link">
       <img src="./images/image-top-laptops.jpg" alt="keyboard image">
-      <h3>02</h3>
-      <h3>Top 10 Laptops of 2022</h3>
-      <p>
-        Our best picks for various needs and budgets.
-      </p>
+      <div class="info">
+        <h3 class="number">02</h3>
+        <h3>Top 10 Laptops of 2022</h3>
+        <p>
+          Our best picks for various needs and budgets.
+        </p>
+      </div>
     </section>
     <section class="article-link">
       <img src="./images/image-gaming-growth.jpg" alt="white playstation controller">
-      <h3>03</h3>
-      <h3>The Growth of Gaming</h3>
-      <p>
-        How the pandemic has sparked fresh opportunities.
-      </p>
+      <div class="info">
+        <h3 class="number">03</h3>
+        <h3>The Growth of Gaming</h3>
+        <p>
+          How the pandemic has sparked fresh opportunities.
+        </p>
+      </div>
     </section>
 
   </main>
