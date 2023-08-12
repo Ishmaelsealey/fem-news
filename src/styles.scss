@@ -51,7 +51,11 @@ header {
 	flex-wrap: nowrap;
 	margin-bottom: 1em;
 	align-items: center;
-	height: 3em;
+	height: 4em;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background-color: $off-white;
 	.logo {
 		flex: 1;
 	}
@@ -275,6 +279,7 @@ p {
 	}
 	header {
 		margin-bottom: 2em;
+		position: static;
 	}
 	.hamburger-menu, .mobile-nav, .mobile-hero-image {
 		display: none;
