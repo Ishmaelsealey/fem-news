@@ -9,6 +9,23 @@
   outline: 4px solid hsl(35deg, 77%, 62%);
 }
 
+*::selection {
+  background-color: hsl(5deg, 85%, 63%);
+  color: hsl(36deg, 100%, 99%);
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(5deg, 85%, 63%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(35deg, 77%, 62%);
+}
+
 body {
   font-family: Inter, sans-serif;
   font-weight: 400;
