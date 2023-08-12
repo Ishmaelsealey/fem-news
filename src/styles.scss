@@ -33,6 +33,11 @@ $very-dark-blue: hsl(240, 100%, 5%);
 	background-color: $primary-orange;
 }
 
+.sr-only {
+	position: absolute;
+	opacity: 0;
+}
+
 body {
 	font-family: Inter, sans-serif;
 	font-weight: 400;
