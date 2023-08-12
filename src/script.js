@@ -8,9 +8,15 @@ hamburgerMenu.addEventListener('click', () => {
 		menuItems.style.display = 'none'
 		menuIconClose.style.display = 'none'
 		menuIconOpen.style.display = 'block'
+		menuIconOpen.style.animationPlayState = 'paused'
+		menuIconClose.style.animationPlayState = 'paused'
 	} else {
-		menuItems.style.display = 'grid'
-		menuIconOpen.style.display = 'none'
-		menuIconClose.style.display = 'block'
+		menuIconOpen.style.animationPlayState = 'running'
+		menuIconOpen.addEventListener('animationend', () => {
+			menuItems.style.display = 'grid'
+			menuIconOpen.style.display = 'none'
+			menuIconClose.style.display = 'block'
+			menuIconClose.style.animationPlayState = 'running'
+		})
 	}
 })
