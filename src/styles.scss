@@ -156,6 +156,22 @@ p {
 	}
 }
 
+// Attribution
+
+.attribution {
+	color: $dark-greyish-blue;
+	font-weight: 700;
+	text-align: center;
+	a {
+		text-decoration: none;
+		color: $very-dark-blue;
+		transition: color 0.3s linear;
+	}
+	a:hover {
+		color: $primary-red;
+	}
+}
+
 // Hamburger Menu
 
 .hamburger-menu {
@@ -214,6 +230,9 @@ p {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		gap: 4em;
+		a {
+			color: $dark-greyish-blue;
+		}
 	}
 	header {
 		margin-bottom: 2em;
